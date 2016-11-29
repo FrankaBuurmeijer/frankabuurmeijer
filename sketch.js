@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(640,640);
+  createCanvas(240,240);
   noLoop();
   background('black');
 }
@@ -8,26 +8,26 @@ function draw() {
   stroke('lightblue');
   strokeWeight(2);
   drawLines(0,20,40);
-  
+
   stroke('lightgreen')
   drawLines(5,20,40);
 
   stroke('magenta')
-  drawLines(10,20,40);  
+  drawLines(10,20,40);
 }
 
 function drawLines(offset,length,distance){
   this.off = offset;
   this.len = length;
   this.dis = distance;
-  
+
 for (var i=0;i<640/20;i++){
   aa = this.off;
   a = i*60 ;
   b = i*60 + 40 + this.off;
   c = i*60 + 20 + this.off;
   d = i*60 + 60 + this.off;
-  
+
   horizontalLine(aa,a,this.len,this.dis);
   verticalLine(b,20,this.len,this.dis);
   diagonalRight(c,0,this.len,this.dis);
@@ -40,7 +40,7 @@ for (var i=0;i<640/20;i++){
 for (var i=0;i<640/20;i++){
   e = -i*60 + 40 + this.off;
   f = -i*60 + 20 + this.off;
-  
+
   diagonalRight(f,0,this.len,this.dis);
   diagonalRight(e,100,this.len,this.dis);
 }
@@ -63,7 +63,7 @@ function verticalLine(xver,yverstart,length,distance) {
   this.yvs = yverstart;
   this.le = length;
   this.di = distance;
-  
+
 for (var i = 0; i<(640/(this.le+this.di));i++) {
   this.yv = i*this.le+i*this.di+this.yvs;
   line(this.xv,this.yv,this.xv,this.yv+this.le);
@@ -75,7 +75,7 @@ function diagonalRight(xdrightstart,ydrightstart,length,distance){
   this.ydrs = ydrightstart;
   this.le = length;
   this.di = distance;
-  
+
 for (var i = 0; i<(640/(this.le+this.di));i++) {
   this.xdr = i*this.le+i*this.di+this.xdrs;
   this.ydr = i*this.le+i*this.di+this.ydrs;
@@ -88,7 +88,7 @@ function diagonalLeft(xdleftstart,ydleftstart,length,distance){
   this.ydls = ydleftstart;
   this.le = length;
   this.di = distance;
-  
+
 for (var i = 0; i<(640/(this.le+this.di));i++) {
   this.xdl = this.xdls-(i*this.le+i*this.di);
   this.ydl = i*this.le+i*this.di+this.ydls;

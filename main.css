@@ -4,6 +4,6 @@ body {
 }
 
 image {
-  width: 320px;
-  height: 320px;
+  width: "320";
+  height: "320";
 }

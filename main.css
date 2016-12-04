@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Audiowide', cursive;
   font-weight: 300;
 }
 
@@ -10,5 +10,7 @@ img {
 }
 
 p {
-    text-align: center;
+  font-family: 'Righteous', cursive;
+  font-weight: 300;
+  text-align: center;
 }

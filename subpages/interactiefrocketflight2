@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- Add jQuery library -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-    <script type="text/javascript" src="https://raw.githubusercontent.com/fancyapps/fancyBox/master/lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
     <!-- bootstrap libraries -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -55,87 +55,22 @@
   </head>
 
   <body>
-    <header class="container">
-      <div class = "row">
-        <div class="col-sm-4">
-        <h1>Franka Maakt
-          </h1>
-        </div>
-      </div>
-    </header>
     <section class="container">
       <div class="row">
-        <div class="col-sm-4">
-          <div class="image" id="afbeelding">
-            <img src="images/octaeder.jpeg" alt ="">
+        <div class="col-sm-6">
+          <div class = "DataVierkant">
+          </div>
+         </div> 
+        <div class="col-sm-6">
+          <div class = "TegelVierkant">
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="image" id="interactief">
-            <a class="fancybox" href="images/rocketflight2.jpeg" title="Lorem ipsum dolor sit amet"><img src="images/rocketflight2.jpeg" alt ="rockets"></a>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="image" id="afbeelding">
-            <img src="images/makingarainbow.jpeg">
-          </div>
-        </div>
-        </div>
-    </section>
-    <section class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="image" id="afbeelding">
-            <a class="fancybox" href="images/makingarainbow.jpeg" title="Lorem ipsum dolor sit amet"><img src="images/makingarainbow.jpeg" alt="Rainbow" /></a>
+        <div class="col-sm-6">
+          <div class ="P5Vierkant">
+            <!--      <script src="p5sketches/octaeder.js" type="text/javascript"></script> -->
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="image">
-            <p>
-              <!--
-              <a class="fancybox" href="images/makingarainbow.jpeg" title="Lorem ipsum dolor sit amet"><img src="images/makingarainbow.jpeg" alt="Rainbow" /></a>
-            -->
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="image">
-            <p>
-              <!--
-              <a class="fancybox" href="images/makingarainbow.jpeg" title="Lorem ipsum dolor sit amet"><img src="images/makingarainbow.jpeg" alt="Rainbow" /></a>
-            -->
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="experiment" id="toelichting">
-          <p>This is an experiment. So is everything you see here.</p>
-        </div>
-      </div>
-      <div class="col-sm-6" id="contact">
-        <div class="contact">
-          <p>Email me.</p>
-        </div>
-      </div>
-    </div>
   </section>
-
-  <section>
-    <div class = "DataVierkant">
-    </div>
-    <div class = "TegelVierkant">
-    </div>
-    <div class ="P5Vierkant">
-      <!--      <script src="p5sketches/octaeder.js" type="text/javascript"></script> -->
-    </div>
-  </section>
-  </body>
+</body>
 </html>

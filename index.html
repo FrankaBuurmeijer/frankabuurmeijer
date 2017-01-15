@@ -37,7 +37,7 @@
     </script>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header class="container">
       <div class = "row">
         <div class="col-sm-4">
@@ -52,6 +52,22 @@
     <p> I need some space</p>
     </div>
     </section>
+
+    <section class="container">
+    	<div class="row">
+    	<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+  				<ul class="nav navbar-nav">
+  					<li  class="active"><a href="#">All</a></li>
+  					<li><a href="#">Images</a></li>
+  					<li><a href="#">Interactives</a></li>
+  					<li><a href="#toelichting">About</a></li>
+  					<li><a href="#contact">Contact</a></li>
+    			</ul>
+  			</div>
+		</nav>
+		</div>
+	</section>
 
     <section class="container">
       <div class="row">
@@ -131,18 +147,24 @@
 
     <section class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-12">
         <div class="experiment" id="toelichting">
-          <p>This is an experiment. So is everything you see.</p>
+        	<h3>About</h3>
+        	<p>This is an experiment. So is everything you see.</p>
         </div>
       </div>
+     </div>
+    </section>
+    <section class="container">
+    <div class="row">
       <div class="col-sm-4" id="contact">
         <div class="contact">
-          <p>Email me.</p>
+        	<h3>Contact</h3>
+        	<p>Email me.</p>
         </div>
       </div>
     </div>
-  </section>
+  	</section>
 
   </body>
 </html>

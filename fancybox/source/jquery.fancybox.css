@@ -201,7 +201,7 @@
 /* Title helper */
 
 .fancybox-title {
-	visibility: hidden;
+	visibility: visible;
 	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
 	position: relative;
 	text-shadow: none;
